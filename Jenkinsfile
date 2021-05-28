@@ -20,6 +20,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
+            archiveArtifacts artifacts: 'dist/**', fingerprint: true
         }
     }
 
